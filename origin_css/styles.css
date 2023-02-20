@@ -1,0 +1,175 @@
+/* ======================================Studio========================================== */
+/* ================ start components ================ */
+/* features section */
+/* team section */
+/* clients section */
+/* ================ end components ================ */
+
+
+/* ================ start main ================ */
+/* features section */
+/* work section */
+/* team section */
+/* ================ end main ================ */
+
+
+
+/* ================ start footer ================ */
+/* contacts */
+/* socials */
+/* ================ end footer ================ */
+
+
+/* ======================================Portfolio========================================== */
+/* ================ start components ================ */
+.proj-filter__button {
+    padding: 6px 22px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--button-background-color);
+    border-color: var(--button-background-color);
+    border-radius: 4px;
+    border-style: none;
+    color: var(--button-text-color);
+
+    transition: background-color var(--transition-animation), color var(--transition-animation), box-shadow var(--transition-animation);
+}
+
+.proj-filter__button:hover, 
+.proj-filter__button:focus {
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--button-text-hover-color);
+}
+
+.proj-filter__button--current {
+    color: var(--button-text-hover-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.proj-filter__option:not(:last-child) {
+    margin-right: 8px;
+}
+
+
+
+
+
+/* project cards */
+.proj__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+}
+
+.proj__item:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.proj__item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+}
+
+.proj__link {
+    display: block;
+
+    transition: box-shadow var(--transition-animation);
+}
+
+.proj__link:hover,
+.proj__link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+
+    display: inline-block;
+    background-color: var(--hover-overlay);
+
+    transition: transform var(--transition-animation);
+}
+
+.proj__link:hover .card::before {
+    transform: translateY(0);
+}
+
+.card__overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+
+    padding: 63px 24px;
+
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color-theme-dark);
+
+    transition: transform var(--transition-animation);
+}
+
+.proj__link:hover .card__overlay {
+    transform: translateY(0%);
+}
+
+.card__bottom {
+    padding: 20px 24px 20px 24px;
+    border-right: 1px solid var(--card-border-color);
+    border-left: 1px solid var(--card-border-color);
+    border-bottom: 1px solid var(--card-border-color);
+}
+
+.card__title {
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color-theme-light);
+}
+
+.card__description {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color-theme-light);
+}
+/* ================ end components ================ */
+
+
+/* ================ start main ================ */
+.proj-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.proj-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* ================= end main ================= */
