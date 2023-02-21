@@ -135,10 +135,9 @@ header .logo {
 }
 
 .contacts-link--reverse {
-  font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--secondary-text-color-theme-dark);
   transition: color var(--transition-animation);
 }
