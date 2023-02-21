@@ -9,11 +9,11 @@
     color: var(--secondary-text-color-theme-light);
 
     transition: color var(--transition-animation);
-}
 
-.contacts-link:hover,
-.contacts-link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .contacts-icon {
@@ -22,12 +22,16 @@
 }
 
 .contacts-link--reverse {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     color: var(--secondary-text-color-theme-dark);
     
     transition: color var(--transition-animation);
-}
 
-.contacts-link--reverse:hover,
-.contacts-link--reverse:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }

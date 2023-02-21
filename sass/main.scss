@@ -9,9 +9,9 @@
 @import './components/contacts-link';
 @import './components/section-title';
 @import './components/modal';
+@import './components/form';
 @import './components/team-card';
 @import './components/socials';
-
 
 @import './layout/header';
 @import './layout/nav';
@@ -22,3 +22,9 @@
 @import './layout/clients';
 @import './layout/footer';
 
+
+
+@import './components/card';
+
+@import './layout/proj-filter';
+@import './layout/proj-list';

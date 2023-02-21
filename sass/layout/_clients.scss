@@ -18,20 +18,21 @@
     border-radius: 4px;
 
     transition: border-color var(--transition-animation);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
 }
 
-.clients__link:hover,
-.clients__link:focus {
-    border-color: var(--accent-color);
-}
 
 .clients__icon {
     fill: var(--icons-fill-light-background);
 
     transition: fill var(--transition-animation);
-}
 
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
-    fill: var(--accent-color);
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: var(--accent-color);
+    }
 }

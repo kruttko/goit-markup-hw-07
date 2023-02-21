@@ -16,22 +16,23 @@
     border-radius: 50%;
 
     transition: background-color var(--transition-animation);
-}
 
-.socials__link:hover, 
-.socials__link:focus {
-    background-color: var(--accent-color);
+    &:hover, 
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
 
 .socials__icon {
     fill: var(--icons-fill-light-background);
 
     transition: fill var(--transition-animation);
+
+    .socials__link:hover &,
+    .socials__link:focus & {
+        fill: #FFFFFF;
+    }
 }
 
-.socials__link:hover .socials__icon,
-.socials__link:focus .socials__icon {
-    fill: #FFFFFF;
-}
 
 

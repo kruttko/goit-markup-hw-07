@@ -7,19 +7,19 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+
+
+    header & {
+        margin-right: 93px;
+    }
+
+    .footer & {
+        margin-bottom: 20px;
+    }
 }
 
 .logo-word {
     color: var(--secondary-logo-color-header);
-}
-
-header .logo {
-    margin-right: 93px;
-}
-
-
-.footer .logo {
-    margin-bottom: 20px;
 }
 
 .logo-word--reverse {
